@@ -1,0 +1,78 @@
+<style>
+        #logo svg,
+            #logo svg * {
+              color: #282828;
+              color: var(--MENU-SECTIONS-BG-color);
+              fill: #282828 !important;
+              fill: var(--MENU-SECTIONS-BG-color) !important;
+              opacity: .945;
+            }
+            a#logo {
+              color: #282828;
+              color: var(--MENU-SECTIONS-BG-color);
+              font-family: 'Work Sans', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
+              font-size: 1.875rem;
+              font-weight: 300;
+              margin-top: -.8125rem;
+              max-width: 80%;
+              text-transform: uppercase;
+              width: 14.125rem;
+              white-space: nowrap;
+            }
+            a#logo:hover {
+              color: #282828;
+              color: var(--MENU-SECTIONS-BG-color);
+            }
+            #logo svg {
+              margin-bottom: -1.25rem;
+              margin-inline-start: -1.47rem;
+              width: 100%;
+            }
+            @media only all and (max-width: 60rem) {
+              a#logo {
+                font-size: 1.5625rem;
+                margin-top: -.1875rem;
+              }
+              #logo svg {
+                margin-bottom: -.75rem;
+                margin-inline-start: -1.47rem;
+              }
+            }
+            @media all and (-ms-high-contrast:none) {
+              {{ "/* IE11s understanding of positioning is weird at best */" | safeCSS }}
+              a#logo {
+                margin-top: -3.625rem;
+              }
+              #logo svg {
+                margin-bottom: -3.875rem;
+                margin-left: -1.47rem;
+              }
+            }
+            @media only all and (-ms-high-contrast:none) and (max-width: 60rem) {
+              #logo svg {
+                margin-left: -1.47rem;
+              }
+            }
+          </style>
+          <a id="logo" href="{{ partial "relLangPrettyUglyURL.hugo" (dict "to" .Site.Home) }}">
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 413.59 81.85">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #231f20;
+        font-family: Consolas-Bold, Consolas;
+        font-size: 58.09px;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        fill: #010101;
+      }
+    </style>
+  </defs>
+  <path class="cls-2" d="M372.66,0H160.16c-9.45,0-18.15,3.21-25.07,8.59-6.93-5.38-15.62-8.59-25.07-8.59H40.93C18.32,0,0,18.32,0,40.93s18.32,40.93,40.93,40.93H110.02c9.45,0,18.15-3.21,25.07-8.59,6.93,5.38,15.62,8.59,25.07,8.59h212.5c22.6,0,40.93-18.32,40.93-40.93S395.27,0,372.66,0ZM110.02,77.01H40.93c-19.9,0-36.08-16.19-36.08-36.08S21.03,4.84,40.93,4.84H110.02c7.98,0,15.36,2.61,21.35,7.01-7.49,7.42-12.12,17.7-12.12,29.07s4.64,21.65,12.12,29.07c-5.98,4.4-13.36,7.01-21.35,7.01Zm36.08-36.08c0,10.16-4.23,19.35-11.01,25.91-6.78-6.56-11.01-15.75-11.01-25.91s4.23-19.35,11.01-25.91c6.78,6.56,11.01,15.75,11.01,25.91Zm226.56,36.08H160.16c-7.98,0-15.36-2.61-21.35-7.01,7.49-7.42,12.12-17.7,12.12-29.07s-4.64-21.65-12.12-29.07c5.98-4.4,13.36-7.01,21.35-7.01h212.5c19.9,0,36.08,16.19,36.08,36.08s-16.19,36.08-36.08,36.08Z"/>
+  <text class="cls-1" transform="translate(52.3 57.06)"><tspan x="0" y="0">#</tspan></text>
+  <text class="cls-1" transform="translate(179.53 55.53)"><tspan x="0" y="0">define</tspan></text>
+</svg>
+
+</a>
